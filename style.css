@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    color: white;
+    background-color: #05070C;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: backslide 1s backwards 0s 1;
+}
+
+@keyframes backslide{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+}
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.4s ease;
+    animation: navbarTag 1.5s backwards 0s 1;
+}
+
+.navbar a:hover{
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@keyframes navbarTag {
+    0%{
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(Untitled\ design\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 13% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home h1{
+    animation: backslide 2s backwards 0s 1;
+}
+
+.home h3{
+    font-weight: 400;
+    animation: forslide 2s forwards 0s 1;
+}
+
+@keyframes forslide{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.home h3 span{
+    color: red;
+    font-size: 20px;
+}
+
+.home p{
+    margin-top: 20px;
+    font-size: 14px;
+    animation: backslide 2s backwards 0s 1;
+}
+
+.home-social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socialbox{
+    border-radius: 50%;
+    border: 5px double red;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0px 0px 30px 3px red;
+    animation: popup 1s ease 0s 1;
+}
+
+.socialbox a {
+    text-decoration: none;
+    color: red;
+}
+
+@keyframes popup{
+    0%{
+        font-size: 0.5rem;
+        height: 1rem;
+        width: 1rem;
+        opacity: 0;
+    }
+    100%{
+        font-size: 2rem;
+        height: 4rem;
+        width: 4rem;
+        opacity: 1;
+    }
+}
+
+.socialbox:hover{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+.facebook :hover{
+    color: rgb(48, 48, 218);
+}
+
+.Instagram :hover{
+    color: rgb(185, 52, 202);
+}
+
+.Github :hover{
+    color: rgb(43, 42, 42);
+}
+
+
+.home-moreabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 2rem;
+    background-color: red;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s ease-out 0s;
+    animation: backslide 1s backwards 0s 1;
+    animation-delay: 1s;
+    box-shadow: 0px 0px 20px 3px red;
+}
+
+.home-moreabout:hover{
+    height: 2rem;
+    width: 10rem;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 3px red,
+    0px 0px 60px 0px red;
+}
+
+.About{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.About-img{
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    padding: -10%;
+    border: 3px solid rgb(241, 49, 49);
+    padding: 12px;
+    border-radius: 50%;
+    background-image: url(cropped_circle_image\ \(1\).png);
+    background-size: contain;
+    box-shadow: 0px 0px 150px 3px red,
+    0px 0px 500px 5px red;
+    transition: 0.6s;
+}
+
+.About-img:hover{
+    height: 40vh;
+    width: 40vh;
+    cursor: pointer;
+}
+
+.About span{
+    color: red;    
+}
+.About-details{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.About-details h1{
+    font-size: 2rem;
+}
+.About-details p{
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.Education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+}
+
+.Education span{
+    color: red;
+}
+
+.container{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.contain-box{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 1px 1px 20px red,
+                1px 1px 40px red;
+    background-color: transparent;    
+    transition: 0.5s;
+}
+.contain-box:hover{
+    transform: translateY(-10px);
+    cursor:text;
+}
+
+.contain-box i{
+    color: red;
+    font-size: 2rem;
+}
+
+.contain-box h1{
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+.contain-box p{
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.Skills{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Skills span{
+    color: red;
+}
+.Skills h1{
+    margin-top: 20px;
+}
+
+.skill-conatiner{
+    margin-top: 2rem;
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-box{
+    height: 10vh;
+    width: 100%;
+}
+
+.skill-box h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.skill-html h3 i{
+    color: #F06529;
+    font-size: 25px;
+}
+
+.skill-css h3 i{
+    color: skyblue;
+    font-size: 25px;
+}
+
+.skill-javascript h3 i{
+    color: #f0db4f;
+    font-size: 25px;
+}
+
+.skill-java h3 i{
+    color: rgb(255, 80, 16);
+    font-size: 25px;
+}
+
+.skill-python h3 i{
+    color: #4B8BBE;
+    font-size: 25px;
+}
+
+.skill-percent{
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.percent-line{
+    height: 8px;
+    background-color: red;
+    box-shadow: 1px 1px 40px red,
+                1px 1px 80px red;
+    border-radius: 10px;
+}
+
+
+#percent-html{
+    width: 92%;
+    animation: percentline-html 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#percent-html::after{
+    content: "92%";
+    position: relative;
+    top: -20px;
+    left: 98%;
+    font-size: 12px;
+}
+
+#percent-css{
+    width: 85%;
+    animation: percentline-css 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#percent-css::after{
+    content: "85%";
+    position: relative;
+    top: -20px;
+    left: 98%;
+    font-size: 12px;
+}
+
+#percent-javascript{
+    width: 70%;
+    animation: percentline-javascript 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#percent-javascript::after{
+    content: "70%";
+    position: relative;
+    top: -20px;
+    left: 98%;
+    font-size: 12px;
+}
+
+#percent-java{
+    width: 82%;
+    animation: percentline-java 3.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#percent-java::after{
+    content: "82%";
+    position: relative;
+    top: -20px;
+    left: 98%;
+    font-size: 12px;
+}
+
+#percent-python{
+    width: 65%;
+    animation: percentline-python 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#percent-python::after{
+    content: "65%";
+    position: relative;
+    top: -20px;
+    left: 98%;
+    font-size: 12px;
+}
+
+@keyframes percentline-html{
+    0%{
+        width: 0;
+        opacity: 0;
+    }    
+    100%{
+        width: 92%;
+        opacity: 1;
+    }
+}
+
+@keyframes percentline-css{
+    0%{
+        width: 0;
+        opacity: 0;
+    }    
+    100%{
+        width: 85%;
+        opacity: 1;
+    }
+}
+
+@keyframes percentline-javascript{
+    0%{
+        width: 0;
+        opacity: 0;
+    }    
+    100%{
+        width: 70%;
+        opacity: 1;
+    }
+}
+
+@keyframes percentline-java{
+    0%{
+        width: 0;
+        opacity: 0;
+    }    
+    100%{
+        width: 82%;
+        opacity: 1;
+    }
+}
+
+@keyframes percentline-python{
+    0%{
+        width: 0;
+        opacity: 0;
+    }    
+    100%{
+        width: 65%;
+        opacity: 1;
+    }
+}
+
+.Project span{
+    color: red;
+}
+
+.Project{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project h1{
+    margin-top: 6%;
+}
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.project-box{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    transition: 0.7s;
+}
+
+.tick-tac-toe{
+    background-image: url(Screenshot\ 2025-11-19\ 121347.png);
+    background-size: cover;
+}
+
+.stone-paper{
+    background-image: url(Screenshot\ 2025-11-19\ 121504.png);
+    background-size: cover;
+}
+.currancy-convertor{
+    background-image: url(Screenshot\ 2025-11-19\ 121621.png);
+    background-size: cover;
+}
+.amazon{
+    background-image: url(Screenshot\ 2025-11-19\ 121727.png);
+    background-size: cover;
+}
+.netflix{
+    background-image: url(Screenshot\ 2025-11-19\ 123710.png);
+    background-size: cover;
+}
+
+.project-box:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+}
