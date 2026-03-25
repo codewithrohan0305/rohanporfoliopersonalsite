@@ -5,3 +5,9 @@ var typed = new Typed(".text", {
     timeDelay:20,
     loop:true
 });
+
+let scrollToSection = ()=>{
+    document.queryselector("about").scrollIntoView({
+    behavior : "smooth"
+    });
+}
