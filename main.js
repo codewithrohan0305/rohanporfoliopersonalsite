@@ -7,7 +7,7 @@ var typed = new Typed(".text", {
 });
 
 let scrollToSection = ()=>{
-    document.queryselector("about").scrollIntoView({
+    document.getelementById("About").scrollIntoView({
     behavior : "smooth"
     });
 }
