@@ -6,7 +6,7 @@ var typed = new Typed(".text", {
     loop:true
 });
 
-let scrollToSection = ()=>{
+function scrollToSection() {
     document.getelementById("About").scrollIntoView({
     behavior : "smooth"
     });
