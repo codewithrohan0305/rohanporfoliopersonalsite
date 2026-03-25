@@ -10,6 +10,10 @@ body{
     background-color: #05070C;
 }
 
+html{
+    scroll-behavior: "smooth";
+}
+
 
 .header{
     position: fixed;
