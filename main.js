@@ -7,7 +7,7 @@ var typed = new Typed(".text", {
 });
 
 function scrollToSection() {
-    document.getelementById("About").scrollIntoView({
+    document.getelementById("#Aboutus").scrollIntoView({
     behavior : "smooth"
     });
 }
