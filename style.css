@@ -606,10 +606,13 @@ html{
 .Contact h2{
     height: 30vh;
     width: 50vw;
-    margin-left: 2rem;
+    margin-left: 20rem;
     margin-bottom: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid white;
+    border-radius: 20px;
 }
 
 .Contact h2 span a{
