@@ -609,6 +609,7 @@ html{
     margin-left: 2rem;
     margin-bottom: 50px;
     text-align: center;
+    border: 2px solid white;
 }
 
 .Contact h2 span a{
