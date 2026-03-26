@@ -604,7 +604,9 @@ html{
 }
 
 .Contact h2{
-    marginb-bottom: 20px;
+    height: 30vh;
+    width: 30vw;
+    margin-bottom: 50px;
 }
 
 .Contact h2 span a{
