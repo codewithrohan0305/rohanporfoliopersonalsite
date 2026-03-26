@@ -602,7 +602,12 @@ html{
     margin-top: 30px;
 }
 
+.Contactid h2{
+    height: 30vh;
+    width: 30vw;
+    margin-bottom: 50px;
+}
+
 .Contact h2 span a{
     color: red;
-    text-decoration: none;
 }
