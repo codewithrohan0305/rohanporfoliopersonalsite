@@ -605,8 +605,9 @@ html{
 
 .Contact h2{
     height: 30vh;
-    width: 30vw;
+    width: 100%;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .Contact h2 span a{
