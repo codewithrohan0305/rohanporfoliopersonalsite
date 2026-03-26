@@ -596,7 +596,7 @@ html{
 .Contactid{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-itmes: center;
     height: 80vh;
     width: 100%;
