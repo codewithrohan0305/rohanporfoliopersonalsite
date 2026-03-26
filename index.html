@@ -12,16 +12,16 @@
     <header class="header">
         <a href="" class="logo">Portfolio.</a>
         <div class="navbar">
-            <a href="#">Home</a>            
+            <a href="#home", onclick = "scrollToSection("home")">Home</a>            
             <a href="#Aboutus", onclick = "scrollToSection("About")">About</a>
-            <a href="#">Education</a>
-            <a href="#">Skills</a>
+            <a href="#Edu", onclick = "scrollToSection("Education")">Education</a>
+            <a href="#Skillspage", onclick = "scrollToSection("Skill")">Skills</a>
             <a href="#projects", onclick= "scrollToSection("Project")">Project</a>
-            <a href="#">Contact</a>
+            <a href="#Contact", onclick = "scrollToSection("Contact")">Contact</a>
         </div>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Rohan Kumar</h1>
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class="Education">
+    <section class="Education" id="Edu">
         <h1>My <span>Education</span></h1>
         <div class="container">
             <div class="contain-box">
@@ -69,7 +69,7 @@
     </section>
 
 
-    <section class="Skills">
+    <section class="Skills" id="Skillspage">
         <h1>My <span>Skills</span></h1>
         <div class="skill-conatiner">
             <div class="skill-html skill-box">
@@ -124,6 +124,15 @@
             <div class="netflix project-box"><a href="https://codewithrohan0305.github.io/Netflix--Practice-Clone/"></a></div>
         </div>
     </section>
+
+    <section class= "Contact", id="Contact">
+        <h1>Contact <span>Us</span></h1>  
+        <h1>Phone :- <span>+91 7298522173</span></h1>
+        <h1>Github :- <span><a href= "https://github.com/codewithrohan0305/" style = "'text-decoration: none">@codewithrohan0305</a></span></h1>
+        <h1>LinkedIn :- <span><a href = "www.linkedin.com/in/rohan-kumar-6a40a0358" style = "'text-decoration: none'">@RohanKumar</a></span></h1>
+        <h1>Insta :- <span><a href ="https://www.instagram.com/__phobicc.rohan" style = "'text-decoration: none'">@__phobicc.rohan</a></span></h1>
+    </section>
+    
 
 
     <script src="main.js"></script>
