@@ -571,3 +571,20 @@ html{
     transform: scale(0.8);
     cursor: pointer;
 }
+
+.Contact{    
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact h1{
+    margin-top: 6%;
+}
+
+.Contact span{
+    color: red;
+}
