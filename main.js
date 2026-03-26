@@ -6,8 +6,8 @@ var typed = new Typed(".text", {
     loop:true
 });
 
-function scrollToSection() {
-    document.getelementById("#Aboutus").scrollIntoView({
+function scrollToSection(classname) {
+    document.queryselector(classname).scrollIntoView({
     behavior : "smooth"
     });
 }
