@@ -603,6 +603,10 @@ html{
     margin-top: 30px;
 }
 
+.Contact h2{
+    marginb-bottom: 20px;
+}
+
 .Contact h2 span a{
     color: red;
 }
